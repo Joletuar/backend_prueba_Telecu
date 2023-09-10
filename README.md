@@ -26,6 +26,12 @@ Renombre el archivo `.env.template` a `.env` en la raíz del proyecto y configur
 - `NODE_ENV`: Entorno de la aplicación (p. ej., `DEV`, `PROD`, `TEST`).
 - `JWT_SEED`: Clave secreta para la generación de tokens JWT.
 
+## Lanzar el servicio en LOCAL
+
+Para ejecutar el servicio en LOCAL debe tener un base activa de MongoDB, puede utilizar el servicio que quiera y configurar la variable de entorno `MONGODB_URL`. Luego de eso, ejecute en la consola: `npm run dev`, `yarn dev` ó `pnpm run dev`.
+
+Finalmente, en la consola tentrá la url donde se ha lanzado el servicio.
+
 ## Documentación de Rutas de API
 
 ## Ruta de Autenticación (`/api/v1/auth`)
