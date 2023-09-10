@@ -34,6 +34,12 @@ Finalmente, en la consola tentrá la url donde se ha lanzado el servicio.
 
 Ejemplo: `http://localhost:<<TU_PUERTO>>`
 
+## Características y descripción
+
+El servicio utiliza el patrón de diseño **MVC**: Modelo, Vista (Endpoint) y Controladores. Se definen los modelos que usarán las tablas para modelar los datos requeridos, las vistas (endpoints) que son aquellos puntos de acceso a la API, y controladores que manejarán y responderán a las solicitudes con un respectivo servicio.
+
+Finalmente, se implementó una arquitectura API REST para crear la API RESTful.
+
 ## Documentación de Rutas de API
 
 ## Ruta de Autenticación (`/api/v1/auth`)
