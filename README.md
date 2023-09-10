@@ -44,8 +44,8 @@ Finalmente, se implementó una arquitectura API REST para crear la API RESTful.
 
 Cuando el servicio y la base de datos esté activa, realiza una petición `GET` a la siguiente ruta para cargar los datos en la BD:
 
-- Departamentos: **_<TU_DOMINIO>_**/api/v1/departments
-- Visitantes de prueba: **_<TU_DOMINIO>_**/api/v1/guests
+- Departamentos: **_<TU_DOMINIO>_**/api/v1/seed/departments
+- Visitantes de prueba: **_<TU_DOMINIO>_**/api/v1/seed/guests
 
 ## Documentación de Rutas de API
 
