@@ -40,6 +40,13 @@ El servicio utiliza el patrón de diseño **MVC**: Modelo, Vista (Endpoint) y Co
 
 Finalmente, se implementó una arquitectura API REST para crear la API RESTful.
 
+## Cargar el Seed de datos para los Departamentos y Visitantes
+
+Cuando el servicio y la base de datos esté activa, realiza una petición `GET` a la siguiente ruta para cargar los datos en la BD:
+
+- Departamentos: **_<TU_DOMINIO>_**/api/v1/departments
+- Visitantes de prueba: **_<TU_DOMINIO>_**/api/v1/guests
+
 ## Documentación de Rutas de API
 
 ## Ruta de Autenticación (`/api/v1/auth`)
