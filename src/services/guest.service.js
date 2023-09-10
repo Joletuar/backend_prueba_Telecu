@@ -27,6 +27,8 @@ const getGuests = async ({ page, pageSize }) => {
     // total de documentos
     const totalGuests = await Guest.countDocuments();
 
+    await disconnectToDB();
+
     //  número total de páginas
     const totalPages = Math.ceil(totalGuests / pageSize);
 
@@ -42,8 +44,6 @@ const getGuests = async ({ page, pageSize }) => {
     console.log(error);
 
     throw new Error('Error al obtener los visitantes');
-  } finally {
-    await disconnectToDB();
   }
 };
 
@@ -94,13 +94,13 @@ const addGuest = async ({
       select: ['_id', 'type'],
     });
 
+    await disconnectToDB();
+
     return populatedGuest;
   } catch (error) {
     console.log(error);
 
     throw new Error(error.message);
-  } finally {
-    await disconnectToDB();
   }
 };
 
@@ -118,6 +118,8 @@ const getGuest = async (id) => {
       select: ['_id', 'type'],
     });
 
+    await disconnectToDB();
+
     if (!guest) {
       throw new Error('Visitante no encontrado');
     }
@@ -127,8 +129,6 @@ const getGuest = async (id) => {
     console.log(error);
 
     throw new Error(error.message);
-  } finally {
-    await disconnectToDB();
   }
 };
 
@@ -147,6 +147,8 @@ const updateGuest = async ({ id, note, status }) => {
       }
     );
 
+    await disconnectToDB();
+
     if (!updatedGuest) {
       throw new Error('Invitado no encontrado');
     }
@@ -156,8 +158,6 @@ const updateGuest = async ({ id, note, status }) => {
     console.log(error);
 
     throw new Error(error.message);
-  } finally {
-    await disconnectToDB();
   }
 };
 
