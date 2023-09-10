@@ -185,3 +185,7 @@ Esta ruta se utiliza para cargar datos de prueba en la base de datos.
 - **Servicio para Cargar Seed de Datos de Visitantes**
 
   - `loadGuestsSeedToDB`
+
+### Implementación de JWT para la Gestión de Sesiones
+
+La aplicación utiliza JSON Web Tokens (JWT) para la generación y gestión segura de sesiones de usuario. JWT permite autenticar usuarios, firmar tokens y garantizar la seguridad de las sesiones, mejorando la experiencia y la seguridad del usuario.
