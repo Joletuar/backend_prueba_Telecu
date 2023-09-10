@@ -32,6 +32,8 @@ Para ejecutar el servicio en LOCAL debe tener un base activa de MongoDB, puede u
 
 Finalmente, en la consola tentrá la url donde se ha lanzado el servicio.
 
+Ejemplo: `http://localhost:<<TU_PUERTO>>`
+
 ## Documentación de Rutas de API
 
 ## Ruta de Autenticación (`/api/v1/auth`)
