@@ -42,13 +42,13 @@ const isValidToken = (token) => {
 
   return new Promise((resolve, reject) => {
     try {
-      // Validamos el token que viene de las cookies
+      
       jwt.verify(token, seed, (err, payload) => {
         if (err) {
           reject('Token no válido');
         }
 
-        // Obtenemos el id del payload del token
+        // Obtenemos los datos
         const { _id, name, role, email } = payload;
 
         resolve({ _id, name, role, email });
